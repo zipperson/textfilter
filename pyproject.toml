@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textfilter"
+version = "0.1.0"
+description = "Reusable text filtering tools (term list + Detoxify) with a CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "detoxify>=0.5.2"
+]
+
+[project.scripts]
+textfilter = "textfilter.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["textfilter"]
