@@ -11,4 +11,6 @@ source .venv/bin/activate
 pip install git+https://github.com/zipperson/textfilter.git
 
 echo "badword" > terms.txt
-textfilter --terms terms.txt
+textfilter --terms terms.txtgit 
+
+## need to create own terms file
