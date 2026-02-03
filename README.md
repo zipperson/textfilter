@@ -1,7 +1,14 @@
-# textfilter
+## Install (WSL / Ubuntu)
 
-A reusable term-list censoring + Detoxify scoring tool with a CLI.
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv git
 
-## Install (local dev)
-```bash
-pip install -e .
+mkdir -p ~/apps/textfilter
+cd ~/apps/textfilter
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install git+https://github.com/zipperson/textfilter.git
+
+echo "badword" > terms.txt
+textfilter --terms terms.txt
