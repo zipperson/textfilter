@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/textfilter/__init__.py
+src/textfilter/cli.py
+src/textfilter/core.py
+src/textfilter/ui.py
+src/textfilter.egg-info/PKG-INFO
+src/textfilter.egg-info/SOURCES.txt
+src/textfilter.egg-info/dependency_links.txt
+src/textfilter.egg-info/top_level.txt
